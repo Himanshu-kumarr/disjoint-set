@@ -27,7 +27,7 @@ class disjointset{
            }
            else if(size[pv]<size[pu]){
                parent[pv]=pu;
-               size[pv]+=size[pu];
+               size[pu]+=size[pv];
            }
            else if(size[pu]==size[pv]){
                parent[pu]=pv;
